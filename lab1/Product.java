@@ -1,10 +1,14 @@
+package Classes;
+
 public class Product {
 
     private String name;
     private double price;
-    private boolean stock;
+    private int stock;
 
-    Product(String name, double price, boolean stock) {
+    public Product(){}
+
+    public Product(String name, double price, int stock) {
         this.name = name;
         this.price = price;
         this.stock = stock;
@@ -18,7 +22,7 @@ public class Product {
         this.price = price;
     }
 
-    public void setStock(boolean stock) {
+    public void setStock(int stock) {
         stock = stock;
     }
 
@@ -30,7 +34,7 @@ public class Product {
         return price;
     }
 
-    public boolean setStock() {
+    public int getStock() {
         return stock;
     }
 
