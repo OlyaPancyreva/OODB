@@ -1,25 +1,44 @@
-import java.util.List;
-import java.util.Scanner;
+package Classes;
 
-public class City extends Shop {
-    Scanner in = new Scanner(System.in);
+public class City {
 
-    private List<Shop> listOfShop;
+    String city;
+    String address;
+    String hours;
 
-    City(String name, String address, String hours) {
-        super(name, address, hours);
+    public City(){
+
+    }
+
+    public City(String city, String address, String hours){
+        this.city = city;
+        this.address = address;
+        this.hours = hours;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getHours() {
+        return hours;
+    }
+
+    public void setHours(String hours) {
+        this.hours = hours;
     }
 
 
-    //    открыть магазин в новом городе
-    public void toExtendShop() {
-        System.out.print("Введите город, в котором вы хотите открыть магазин: ");
-        String city = in.next();
-        System.out.print("Введите адрес: ");
-        String address = in.next();
-        System.out.print("Введите часы работы магазина: ");
-        String hours = in.next();
-
-        listOfShop.add(new Shop(city, address, hours));
-    }
 }
