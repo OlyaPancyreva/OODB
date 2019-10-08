@@ -1,41 +1,54 @@
-import java.util.List;
-import java.util.Scanner;
+package Classes;
 
 //  реализация сотрудников
-public class Worker extends Person {
-    Scanner in = new Scanner(System.in);
-    List<Person> listOfWorker;
+public class Worker {
 
-    Worker(String name, String number, char gender, double salary) {
-        super(name, number, gender, salary);
+    private String name;
+    private String number;
+    private char gender;
+    private double salary;
+
+    public Worker() {
+
     }
 
-    //    нанять нового сотрудника
-    public void addWorker() {
-        System.out.print("Введите имя нового сотрудника: ");
-        String name = in.next();
-        System.out.print("Номер телефона: ");
-        String number = in.next();
-        System.out.print("Введите пол: ");
-        char gender = in.next().charAt(0);
-        System.out.print("Зарплата: ");
-        double salary = in.nextDouble();
-        listOfWorker.add(new Person(name, number, gender, salary));
+    public Worker(String name, String number, char gender, double salary) {
+        this.name = name;
+        this.number = number;
+        this.gender = gender;
+        this.salary = salary;
     }
 
-    //    уволить сотрудника
-    public void dismiss() {
-        System.out.println("Введите имя сотрудника, которого вы хотите уволить:");
-        String name = in.next();
-        for (Person list : listOfWorker) {
-            if (list.getName().equals(name)) {
-                listOfWorker.remove(name);
-            }
-        }
+
+    public String getName() {
+        return name;
     }
 
-    //    вывод на экран всех сотрудников
-    public void printWorker() {
-        System.out.println(listOfWorker);
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 }
