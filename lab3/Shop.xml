@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shop>
+    <cities>
+        <city>
+            <address>Солнечная 10</address>
+            <city>Казань</city>
+            <hours>10-21</hours>
+        </city>
+        <city>
+            <address>Кремлевская 1</address>
+            <city>Казань</city>
+            <hours>10-22</hours>
+        </city>
+        <city>
+            <address>Челюскина 24</address>
+            <city>Москва</city>
+            <hours>10-22</hours>
+        </city>
+        <city>
+            <address>Кирова 15</address>
+            <city>Иваново</city>
+            <hours>10-22</hours>
+        </city>
+    </cities>
+    <products>
+        <product>
+            <name>Игрушка</name>
+            <price>500.0</price>
+            <stock>10</stock>
+        </product>
+        <product>
+            <name>Игрушка</name>
+            <price>200.0</price>
+            <stock>3</stock>
+        </product>
+        <product>
+            <name>Машинка</name>
+            <price>350.0</price>
+            <stock>15</stock>
+        </product>
+        <product>
+            <name>Открытка</name>
+            <price>600.0</price>
+            <stock>7</stock>
+        </product>
+    </products>
+    <workers>
+        <worker>
+            <gender>1078</gender>
+            <name>Ольга</name>
+            <number>+79178873321</number>
+            <salary>45000.0</salary>
+        </worker>
+        <worker>
+            <gender>1084</gender>
+            <name>Алексей</name>
+            <number>+79651905192</number>
+            <salary>65000.0</salary>
+        </worker>
+        <worker>
+            <gender>1084</gender>
+            <name>Иван</name>
+            <number>+79224868441</number>
+            <salary>13000.0</salary>
+        </worker>
+    </workers>
+</shop>
